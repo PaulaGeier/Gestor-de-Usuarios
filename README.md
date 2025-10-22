@@ -1,73 +1,52 @@
-# React + TypeScript + Vite
+# 🧑‍💼 Gestor de Usuarios
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada con **React + TypeScript**, que permite visualizar, crear, editar, eliminar y buscar usuarios.  
+El proyecto utiliza un **hook personalizado** (`useUsers`) para manejar la lógica CRUD y modales reutilizables para edición y detalles.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Instalación y ejecución
 
-## React Compiler
+> Los módulos (`node_modules`) están en el `.gitignore`, por lo que deben instalarse manualmente antes de correr el proyecto.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 1️⃣ Clonar el repositorio
 
-## Expanding the ESLint configuration
+`git clone https://github.com/tu-usuario/gestor-usuarios.git cd gestor-usuarios`
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 2️⃣ Instalar dependencias
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+`npm install`
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 3️⃣ Iniciar el servidor de desarrollo
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+`npm run dev`
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 4️⃣ Abrir en el navegador
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Por defecto, Vite levanta la app en:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+`http://localhost:5173`
+
+---
+
+## ⚙️ Funcionalidades
+
+✅ Listado de usuarios  
+✅ Búsqueda dinámica (por nombre, usuario, email o teléfono)  
+✅ Crear nuevo usuario  
+✅ Editar usuario existente  
+✅ Eliminar usuario  
+✅ Ver detalles del usuario en un modal
+
+---
+
+## 🧠 Tecnologías utilizadas
+
+- **React 18 + TypeScript**
+    
+- **Vite** (entorno de desarrollo rápido)
+    
+- **React Icons** (íconos de interfaz)
+    
+- **CSS Modules** (estilos aislados por componente)
+- 
