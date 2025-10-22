@@ -1,0 +1,44 @@
+.container{
+    background-color: #763683;
+    width: 100vw;
+    height: 12vh;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0;
+    gap: 20px;
+}
+
+.title{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.containerButtons{
+    padding-right: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 20px  ;
+}
+
+.seachUser{
+    width: 9rem;
+    height: 1rem;
+    font-size: 15px;
+}
+
+.addUser{
+    width: 2.25rem;
+    height: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#be7cca; ;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 25px;
+    margin-right: 1rem;
+}
+

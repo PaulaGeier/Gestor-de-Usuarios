@@ -1,0 +1,60 @@
+.container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3); 
+}
+
+.containerModal{
+    background-color: #fff;
+    width: 25vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 20px;
+    margin-top: 1rem;
+}
+.containerTitle h3{
+    text-align: center;
+    flex: 1; 
+    margin: 0;
+}
+.form{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 15px;
+}
+
+input{
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+}
+
+.containerModal h2{
+    margin-bottom: 1rem;
+}
+
+
+.containerButtons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin:2rem;
+}
+
+.containerButtons button{
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+    color: #fff;
+}
